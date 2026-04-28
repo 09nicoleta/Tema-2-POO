@@ -6,13 +6,14 @@ class Meniu{
     
     virtual float total_plata_()const =0;
     virtual void afisare(std::ostream&) const=0;
-
+    protected:
+    static int venit_total;
     public:
     //Constructor
     Meniu()=default;
     //Constructor de copiere
     Meniu(const Meniu & meniu)=default;
-    
+    virtual void citire(std::istream &in)=0;
     Meniu & operator=(const Meniu & meniu)=default; 
     //Destructor
     virtual ~Meniu()=0;

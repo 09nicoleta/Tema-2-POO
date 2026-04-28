@@ -2,8 +2,6 @@
 #include<iostream>
 
 std::ostream & operator<<(std::ostream &os, const Meniu & meniu){
-
-    os<<"Clientul a comandat: ";
     meniu.afisare(os);
     os<<"\n";
     return os;
@@ -12,6 +10,7 @@ std::ostream & operator<<(std::ostream &os, const Meniu & meniu){
 float Meniu::total_plata() const{
     return total_plata_();
 }
-
 //Destructor pur virtual
 Meniu::~Meniu(){}
+
+int Meniu::venit_total=0;

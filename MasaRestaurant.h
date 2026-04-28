@@ -7,20 +7,23 @@
 class MasaRestaurant{
     std::vector<std::shared_ptr<Meniu>> meniuri;
     int id_masa, timp;
+
+    std::shared_ptr<Meniu> creeazaMeniu(const std::string & tip);
     public:
     float consum_total() const;
     //Constructor
+    MasaRestaurant()=default;
     MasaRestaurant(const std::vector<std::shared_ptr<Meniu>> &meniuri, int id_masa, int timp);
     //Constructor de copiere
     MasaRestaurant(const MasaRestaurant & masa);
 
     MasaRestaurant &operator=(MasaRestaurant m);
     friend void swap(MasaRestaurant &m1, MasaRestaurant &m2);
-    friend std::ostream &operator<<(std::ostream & os, const MasaRestaurant &m);
 
+    friend std::ostream &operator<<(std::ostream & os, const MasaRestaurant &m);
+    friend std::istream &operator>>(std::istream &in, MasaRestaurant &m);
     //Destructor
     ~MasaRestaurant()=default;
-
 };
 
 #endif

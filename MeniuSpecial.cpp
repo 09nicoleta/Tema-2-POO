@@ -2,8 +2,13 @@
 #include<iostream>
 
 //Constructor
-MeniuSpecial::MeniuSpecial(std::vector<std::pair<std::string,float>>comanda={}):comanda{comanda}{}
-MeniuSpecial::MeniuSpecial(std::initializer_list<std::pair<std::string,float>>comanda={}):comanda{comanda}{}
+MeniuSpecial::MeniuSpecial(std::vector<std::pair<std::string,float>>comanda={}):comanda{comanda}{
+    venit_total+=total_plata_();
+}
+MeniuSpecial::MeniuSpecial(std::initializer_list<std::pair<std::string,float>>comanda={}):comanda{comanda}{
+    venit_total+=total_plata_();
+
+}
 
 std::shared_ptr<Meniu> MeniuSpecial::clone() const{
     return std::make_shared<MeniuSpecial>(*this);
@@ -23,3 +28,15 @@ float MeniuSpecial::total_plata_() const{
 
     return plata;
 }
+
+void MeniuSpecial::citire(std::istream& in) {
+    int n;
+    in >> n;
+    for(int i = 0; i < n; i++) {
+        std::string nume;
+        float pret;
+        in >> nume >> pret;
+        comanda.emplace_back(nume, pret);
+    }
+}
+
