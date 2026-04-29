@@ -10,6 +10,9 @@ std::ostream & operator<<(std::ostream &os, const Meniu & meniu){
 float Meniu::total_plata() const{
     return total_plata_();
 }
+int Meniu::get_venit(){
+    return venit_total;
+}
 //Destructor pur virtual
 Meniu::~Meniu(){}
 

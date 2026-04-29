@@ -13,6 +13,9 @@ class Zi{
     Zi(const std::string &zi);
     void adaugare(const MasaRestaurant & m);
     friend std::ostream & operator<<(std::ostream & os, const Zi &zi);
+     std::vector<int> rezumat_zi();
+    std::string getZi() const;
 };
+
 
 #endif

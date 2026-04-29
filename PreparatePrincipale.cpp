@@ -1,4 +1,5 @@
 #include "PreparatePrincipale.h"
+#include "Exceptii.h"
 #include<iostream>
 
 //Constructor
@@ -37,6 +38,9 @@ void PreparatePrincipale::citire(std::istream & in){
         std::string nume;
         float pret;
         in >> nume >> pret;
+        if(pret<=0)
+            throw InputInvalid("Pretul nu poate fi negativ");
+
         comanda.emplace_back(nume, pret);
     }
 }

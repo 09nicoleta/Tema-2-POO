@@ -3,7 +3,7 @@
 #include "MeniuSpecial.h"
 #include "Bauturi.h"
 #include "PreparatePrincipale.h"
-
+#include "Exceptii.h"
 #include<iostream>
 
 //Constructor
@@ -52,7 +52,7 @@ std::shared_ptr<Meniu> MasaRestaurant::creeazaMeniu(const std::string & tip){
     if (tip == "PreparatePrincipale")
         return std::make_shared<PreparatePrincipale>();
 
-    throw std::runtime_error("Tip necunoscut");
+    throw EroareMeniu("Tip necunoscut");
 }
 
 
@@ -65,9 +65,24 @@ std::istream &operator>>(std::istream &in, MasaRestaurant &m){
         //Alocarea memoriei pentru meniu
         auto meniu=m.creeazaMeniu(tip);
         meniu->citire(in);
-        m.meniuri.emplace_back(meniu);
-        
+        m.meniuri.emplace_back(meniu);   
     }
     in>>m.id_masa>>m.timp;
     return in;
+}
+
+std::vector<int> MasaRestaurant::rezumat_comanda(){
+    int nr_msp=0, nr_b=0, nr_pp=0;
+
+    for(const auto &m : meniuri){
+        //m.get() returneaza pointerul "brut", m fiind de tip shared_ptr, altfel ar da eroare
+        if(dynamic_cast<MeniuSpecial*>(m.get()))
+            nr_msp++;
+        else if(dynamic_cast<Bauturi*>(m.get()))
+            nr_b++;
+        else if(dynamic_cast<PreparatePrincipale*>(m.get()))
+            nr_pp++;
+    }
+
+    return {nr_pp,nr_msp, nr_b,};
 }

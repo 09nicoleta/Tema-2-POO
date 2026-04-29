@@ -24,6 +24,8 @@ class MasaRestaurant{
     friend std::istream &operator>>(std::istream &in, MasaRestaurant &m);
     //Destructor
     ~MasaRestaurant()=default;
+    std::vector<int> rezumat_comanda();
 };
 
 #endif
+

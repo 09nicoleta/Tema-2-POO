@@ -20,6 +20,7 @@ class Meniu{
     friend std::ostream &operator<<(std::ostream & os, const Meniu & meniu);
     float total_plata() const; 
     virtual std::shared_ptr<Meniu> clone() const = 0;
+    static int get_venit();
 
 };
 

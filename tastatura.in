@@ -1,14 +1,90 @@
 1
 3
 2
-MeniuSpecial 2 fel1 12 fel2 20
-Bauturi 2 b1 10 b2 3
-10 120
-2
-PreparatePrincipale 3 fel5 12 fel4 20 fel5 15
-Bauturi 2 fel2 10 fel1 3
+MeniuSpecial 2 Business 52 Family 70
+Bauturi 2 Limonada 15 Apa 3
+11 10
+1
+PreparatePrincipale 3 Pizza 35 Salată 20 Inghetata 10
 12 30
 1
-PreparatePrincipale 2 FEL1 4 FEL2 15
+PreparatePrincipale 2 Salata 4 Burger 20
+1 300
+2
+3
+3
+MeniuSpecial 3 Business 42 Family 70 Fitness 55
+Bauturi 5 Limonada 15 Pepsi 5 Apa 3 Cappuccino 15 Ceai 10
+PreparatePrincipale 6 Burger 20 Paste 38 Pizza 35 Salata 20 Papanasi 20 Inghetata 10
+9 20
+2
+MeniuSpecial 1 Family 70
+Bauturi 2 Pepsi 5 Ceai 10
+5 30
+1
+PreparatePrincipale 3 Pizza 35 Burger 20 Papanasi 20
+5 260
+3
+3
+2
+MeniuSpecial 2 Business 52 Family 70
+Bauturi 2 Ceai 10 Apa 3
+10 120
+1
+PreparatePrincipale 3 Pizza 35 Salată 20 Papanasi 20
+12 30
+1
+PreparatePrincipale 2 Salata 4 Burger 20
 11 300
-
+2
+3
+3
+MeniuSpecial 3 Business 42 Family 70 Fitness 55
+Bauturi 5 Limonada 15 Pepsi 5 Apa 3 Cappuccino 15 Ceai 10
+PreparatePrincipale 6 Burger 20 Paste 38 Pizza 35 Salata 20 Papanasi 20 Inghetata 10
+3 320
+2
+MeniuSpecial 1 Family 70
+Bauturi 2 Pepsi 5 Ceai 10
+7 130
+1
+PreparatePrincipale 3 Pizza 35 Burger 20 Papanasi 20
+2 60
+3
+3
+2
+MeniuSpecial 2 Business 52 Family 70
+Bauturi 2 Ceai 10 Apa 3
+8 65
+1
+PreparatePrincipale 3 Pizza 35 Salată 20 Papanasi 20
+1 130
+1
+PreparatePrincipale 2 Salata 4 Burger 20
+8 310
+2
+3
+3
+MeniuSpecial 3 Business 42 Family 70 Fitness 55
+Bauturi 5 Limonada 15 Pepsi 5 Apa 3 Cappuccino 15 Ceai 10
+PreparatePrincipale 6 Burger 20 Paste 38 Pizza 35 Salata 20 Papanasi 20 Inghetata 10
+9 320
+2
+MeniuSpecial 1 Family 70
+Bauturi 2 Pepsi 5 Ceai 10
+15 24
+1
+PreparatePrincipale 3 Pizza 35 Burger 20 Papanasi 20
+4 20
+3
+3
+2
+MeniuSpecial 2 Business 52 Family 70
+Bauturi 2 Ceai 10 Apa 3
+12 124
+1
+PreparatePrincipale 3 Pizza 35 Salată 20 Papanasi 20
+12 30
+1
+PreparatePrincipale 2 Salata 4 Burger 20
+1 301
